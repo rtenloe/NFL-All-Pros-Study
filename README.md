@@ -108,7 +108,7 @@ def combine_csvs(directory, output_csv):
     
     print(f"All files combined into: {output_csv}")
 
-directory = '/Users/kierraenloe/Documents/All-Pros Project/CSV'  # Replace with the directory containing CSV files
+directory = '/Users/kierraenloe/Documents/All-Pros Project/CSV'  # Directory containing CSV files
 output_csv = os.path.join(directory, 'combined_data.csv')  # The combined CSV file output path
 combine_csvs(directory, output_csv)
 ```
@@ -138,7 +138,7 @@ def remove_invalid_rows(input_csv, output_csv, column_name='Player-additional', 
 
     print(f"Filtered file saved as: {output_csv}")
 
-input_csv = '/Users/kierraenloe/Documents/All-Pros Project/CSV/combined_data.csv'  # Replace with combined CSV file path
+input_csv = '/Users/kierraenloe/Documents/All-Pros Project/CSV/combined_data.csv'  # Combined CSV file path
 output_csv = '/Users/kierraenloe/Documents/All-Pros Project/CSV/combined_data_filtered.csv' # The output filtered CSV file path
 remove_invalid_rows(input_csv, output_csv)
 ```
