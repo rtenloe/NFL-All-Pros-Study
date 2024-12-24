@@ -1,4 +1,17 @@
 # NFL-All-Pros-Study
+# [IN PROGRESS]
+## Introduction
+### What are we doing here?
+The usage of data analytics in sports has increased exponentially in the past 15-20 years. I have always loved math, numbers, and solving problems or finding patterns. Sports is also something that I have always had a love for so those two areas mesh very well in sports analytics. I love baseball, basketball, auto racing, and football, but football is definitely my favorite sport to watch and study. In this particular study, I am analyzing the Associated Press (AP) All-Pro teams from the past 20 years to see if there are certain traits these players share that can be used going forward to find good players in free agency or the draft. On top of this, I am interested in how some of these traits could have possibly changed over time with the evolution of the game.
+### Why the AP All-Pro teams?
+In the NFL, there are two primary all-star teams that players can be selected for: the Pro Bowl team or the All-Pro team. The Pro Bowl is operated by the NFL and players are selected through a consensus of votes by players, coaches, and fans. Votes from each of these groups count one-third toward selecting players. There are two Pro-Bowl teams (one for each conference): the NFC team and the AFC team. The primary All-Pro team (split into first-team and second-team) is operated by the AP and is voted on my selected media members by the AP. Due to the fact that players, coaches, and even fans do not watch every player in the league and are especially susceptible to bias, the Pro Bowl teams are often considered less accurate than the all-pro teams. Additionally, players that were selected to the Pro Bowl, but make it to the Super Bowl have to have an alterante selected in their place. Also, a player can opt out of playing in the Pro Bowl and so alternates are selected for those players as well. This can lead to the number of players being selected to the Pro Bowl team to be quite large. Overall, being selected to an All-Pro is seen as a bigger honor than the Pro Bowl. There are several other organizations that select All-Pro teams (e.g. Football Writers of America (FWA), Pro Football Focus (PFF), The Sporting News (TSN), etc.), but the AP All-Pro team is widely considered to be the definitive all-pro team when a player's legacy is being considered. Therefore, I am only focusing on the AP All-Pro teams (1st and 2nd team) for this study.
+## Data Sources
+In order to complete this study, I need the list of players on the AP All-Pro teams from 2000-2023 as well as their statistics and physical measurements and testing numbers. Below is a list of where I obtained each piece of data:
+|			Data		  	  |			    Source		   	   |
+|-------------------------------------------------|--------------------------------------------------------|
+| 	AP All-Pro team rosters (2000-2023) 	  |		Pro-Football-Reference.com      	   |
+| 	 	AP All-Pro team stats 		  |		Pro-Football-Reference.com		   |
+| Player physical measurements and testing scores |	Pro-Football-Reference.com & NFLCombineResults.com |
 ## Python Code
 ```
 import csv
