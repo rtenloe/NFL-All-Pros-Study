@@ -71,8 +71,8 @@ def process_multiple_csvs(directory):
         convert_heights_in_csv(file, output_file)
         print(f"Converted file saved as: {output_file}")
 
-# Example usage
-directory = '/Users/kierraenloe/Documents/All-Pros Project/CSV'  # Replace with the directory containing CSV files
+# Input CSV Directory
+directory = '/Users/kierraenloe/Documents/All-Pros Project/CSV'
 process_multiple_csvs(directory)
 ```
 The combine data that I pulled from had the heights listed as "Feet-Inches". In order to get this into a format for SQL, I changed that to inches.
