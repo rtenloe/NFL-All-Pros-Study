@@ -232,3 +232,16 @@ WHERE all_pro_team LIKE '%AP%'
 ORDER BY player ASC
 ```
 Creates a table where only the AP all-pro teams are considered.
+```
+WITH var AS
+	(SELECT a.player_id, a.player, a.pos, team, age, years_exp, games_played, games_started, pass_comps, pass_atts, pass_yds, pass_tds, off_ints, rush_att, rush_yds, rush_tds, receptions, receiving_yds, receiving_tds, solo_tackles, sacks, def_ints, all_pro_team, school, ht, wt, dash, vertical, bench, broad, cone, shuttle, draft
+	FROM ap_combined a
+	LEFT JOIN nfl_combine_data b
+	ON a.player_id = b.player_id)
+SELECT player_id, player
+FROM var
+WHERE draft IS NULL
+GROUP BY player_id, player
+ORDER BY player ASC
+```
+Combines the two all-pro players with the combine data pulled from Pro Football Reference. Since the combine data on PFR doesn't start until the 2000 draft, I also want to select the players that were either drafted prior to 2000 or did not attend the combine. From this data I can seach an alternative source to get earlier combine data or pro day numbers.
